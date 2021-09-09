@@ -72,6 +72,13 @@ publishing {
 }
 
 
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+    }
+}
+
 android {
     compileSdkVersion 28
     buildToolsVersion '28.0.3'
@@ -118,6 +125,3 @@ dependencies {
 
 apply from: 'install.gradle'
 apply from: 'bintray.gradle'
-repositories {
-    mavenCentral()
-}
