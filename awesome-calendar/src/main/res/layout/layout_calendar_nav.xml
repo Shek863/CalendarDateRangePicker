@@ -1,36 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@+id/rlHeaderCalendar"
+<RelativeLayout
+    android:id="@+id/rlHeaderCalendar"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingBottom="@dimen/dateTitlePaddingBottom">
+    android:layout_height="wrap_content">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imgVNavLeft"
-        android:layout_width="wrap_content"
+    <LinearLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/ic_left_selector" />
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="@dimen/dateTitlePaddingBottom"
+        android:paddingEnd="15dp"
+        android:paddingStart="30dp">
 
-    <com.archit.calendardaterangepicker.customviews.CustomTextView
-        android:id="@+id/tvYearTitle"
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:tag="dateTitle"
-        android:text="FEBRUARY 2014"
-        android:textSize="@dimen/text_size_title" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imgVNavRight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/ic_right_selector" />
+        <com.archit.calendardaterangepicker.customviews.CustomTextView
+            android:id="@+id/tvYearTitle"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="start"
+            android:tag="dateTitle"
+            android:textColor="@android:color/black"
+            android:text="Mars 2014"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_title" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgVNavLeft"
+            android:tint="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_left_selector" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgVNavRight"
+            android:layout_width="wrap_content"
+            android:tint="@android:color/black"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_right_selector" />
+    </LinearLayout>
 </RelativeLayout>

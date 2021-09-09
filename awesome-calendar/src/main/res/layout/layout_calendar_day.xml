@@ -6,10 +6,30 @@
         android:id="@+id/viewStrip"
         style="@style/StripRange" />
 
-    <com.archit.calendardaterangepicker.customviews.CustomTextView
-        android:id="@+id/dayOfMonthText"
-        style="@style/DayOfMonthStyle"
-        android:text="0" />
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/newHSize">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                style="@style/StripLeftRight" />
+            <com.archit.calendardaterangepicker.customviews.CustomTextView
+                android:id="@+id/dayOfMonthText"
+                android:layout_weight="1"
+                style="@style/DayOfMonthStyle"
+                android:text="0" />
+            <View
+                style="@style/StripLeftRight" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
 
 </merge>
 

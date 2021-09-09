@@ -30,7 +30,7 @@
 
     <style name="DayOfMonthStyle">
         <item name="android:layout_width">@dimen/dayOfMonthSize</item>
-        <item name="android:layout_height">@dimen/dayOfMonthSize</item>
+        <item name="android:layout_height">@dimen/newHSize</item>
         <item name="android:textSize">@dimen/text_size_date</item>
         <item name="android:gravity">center</item>
         <item name="android:minHeight">@dimen/dayOfMonthMinHeight</item>
@@ -49,8 +49,17 @@
 
     <style name="StripRange">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/strip_height</item>
+        <item name="android:layout_height">@dimen/newHSize</item>
+<!--        <item name="android:layout_height">@dimen/strip_height</item>-->
         <item name="android:background">@color/range_bg_color</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="StripLeftRight">
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">@dimen/newHSize</item>
+<!--        <item name="android:layout_height">@dimen/strip_height</item>-->
+        <item name="android:background">#fff</item>
         <item name="android:layout_gravity">center</item>
     </style>
 

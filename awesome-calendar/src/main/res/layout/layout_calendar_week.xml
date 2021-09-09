@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:baselineAligned="false"
     android:gravity="center_horizontal"
+    android:paddingVertical="1.15dp"
     android:minHeight="@dimen/weekRowMinHeight"
     android:orientation="horizontal">
 

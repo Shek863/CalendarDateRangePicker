@@ -1,11 +1,11 @@
 <resources>
-    <string name="cdrp_mon">Пн</string>
-    <string name="cdrp_tue">Вт</string>
-    <string name="cdrp_wed">Ср</string>
-    <string name="cdrp_thu">Чт</string>
-    <string name="cdrp_fri">Пт</string>
-    <string name="cdrp_sat">Сб</string>
-    <string name="cdrp_sun">Вс</string>
+    <string name="cdrp_mon">П</string>
+    <string name="cdrp_tue">В</string>
+    <string name="cdrp_wed">С</string>
+    <string name="cdrp_thu">Ч</string>
+    <string name="cdrp_fri">П</string>
+    <string name="cdrp_sat">С</string>
+    <string name="cdrp_sun">В</string>
 
     <string-array name="week_sun_sat">
         <item>@string/cdrp_sun</item>

@@ -17,14 +17,14 @@
 
         <com.archit.calendardaterangepicker.customviews.DateRangeCalendarView
             android:id="@+id/cdrvCalendar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="330dp"
+            android:layout_height="330dp"
             custom:calendar_tag="Test"
+            android:layout_marginTop="10dp"
             custom:date_selection_mode="free_range"
             custom:disable_date_color="#ABABAB"
             custom:editable="true"
             custom:enable_time_selection="false"
-            custom:header_bg="@drawable/calendar_header"
             custom:range_color="@color/range_bg_color_app"
             custom:selected_date_circle_color="@color/selected_date_circle_color_app"
             custom:title_color="@color/calendar_header_title"

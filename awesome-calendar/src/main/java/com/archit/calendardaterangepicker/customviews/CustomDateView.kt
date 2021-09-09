@@ -205,7 +205,7 @@ class CustomDateView @JvmOverloads constructor(
         val drawable = ContextCompat.getDrawable(context, drawable.range_bg_left)
         drawable!!.colorFilter = PorterDuffColorFilter(stripColor, filterMode)
         strip.background = drawable
-        layoutParams.setMargins(20, 0, 0, 0)
+        layoutParams.setMargins(5, 0, 0, 0)
         strip.layoutParams = layoutParams
     }
 
@@ -214,7 +214,7 @@ class CustomDateView @JvmOverloads constructor(
         val drawable = ContextCompat.getDrawable(context, drawable.range_bg_right)
         drawable!!.colorFilter = PorterDuffColorFilter(stripColor, filterMode)
         strip.background = drawable
-        layoutParams.setMargins(0, 0, 20, 0)
+        layoutParams.setMargins(0, 0, 5, 0)
         strip.layoutParams = layoutParams
     }
 

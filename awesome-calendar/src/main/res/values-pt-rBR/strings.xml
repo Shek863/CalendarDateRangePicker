@@ -1,11 +1,11 @@
 <resources>
-    <string name="cdrp_mon">Seg</string>
-    <string name="cdrp_tue">Ter</string>
-    <string name="cdrp_wed">Qua</string>
-    <string name="cdrp_thu">Qui</string>
-    <string name="cdrp_fri">Sex</string>
-    <string name="cdrp_sat">Sab</string>
-    <string name="cdrp_sun">Dom</string>
+    <string name="cdrp_mon">S</string>
+    <string name="cdrp_tue">T</string>
+    <string name="cdrp_wed">Q</string>
+    <string name="cdrp_thu">Q</string>
+    <string name="cdrp_fri">S</string>
+    <string name="cdrp_sat">S</string>
+    <string name="cdrp_sun">D</string>
 
     <string-array name="week_sun_sat">
         <item>@string/cdrp_sun</item>
