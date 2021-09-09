@@ -1,8 +1,5 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'maven-publish'
-
-apply from: rootProject.file("github.properties")
 
 android {
     compileSdkVersion 28
@@ -26,50 +23,6 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
-
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-
-                // Replace with your own group ID.
-                groupId 'com.shek368.calendarrangepicker'
-
-                // Replace with the name of your library
-                artifactId 'library-name'
-                version '1.0.0'
-            }
-
-            debug(MavenPublication) {
-                from components.debug
-
-                // Replace with your own group ID.
-                groupId 'com.shek368.calendarrangepicker'
-
-                // Replace with the name of your library
-                artifactId 'library-name'
-                version '1.0.0'
-            }
-        }
-
-        repositories {
-            maven {
-                name = "GitHubPackages"
-
-                // Replace GITHUB_USERID with your personal or organisation user ID and
-                // REPOSITORY with the name of the repository on GitHub
-                url = uri("https://maven.pkg.github.com/shek368/CalendarDateRangePicker")
-
-                credentials {
-                    username = ext.usr
-                    password = ext.key
-                }
-            }
-        }
-    }
-}
-
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
